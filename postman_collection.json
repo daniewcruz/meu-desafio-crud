@@ -1,0 +1,56 @@
+{
+	"info": {
+		"name": "Contatos API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"variable": [
+		{ "key": "baseUrl", "value": "http://localhost:3000" }
+	],
+	"item": [
+		{
+			"name": "Criar contato",
+			"request": {
+				"method": "POST",
+				"header": [ { "key": "Content-Type", "value": "application/json" } ],
+				"url": { "raw": "{{baseUrl}}/api/contatos", "host": ["{{baseUrl}}"], "path": ["api", "contatos"] },
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nome\": \"Maria Silva\",\n  \"dataNascimento\": \"1992-12-01\",\n  \"observacoes\": \"Criada via Postman\",\n  \"telefone\": \"84999990000\",\n  \"email\": \"maria@silva.com\"\n}"
+				}
+			}
+		},
+		{
+			"name": "Atualizar contato",
+			"request": {
+				"method": "PUT",
+				"header": [ { "key": "Content-Type", "value": "application/json" } ],
+				"url": { "raw": "{{baseUrl}}/api/contatos/:id", "host": ["{{baseUrl}}"], "path": ["api", "contatos", ":id"] },
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nome\": \"Maria S. Atualizada\",\n  \"dataNascimento\": \"1992-12-01\",\n  \"observacoes\": \"Atualizada via Postman\",\n  \"telefone\": \"84999990001\",\n  \"email\": \"maria@silva.com\"\n}"
+				}
+			}
+		},
+		{
+			"name": "Remover contato",
+			"request": {
+				"method": "DELETE",
+				"url": { "raw": "{{baseUrl}}/api/contatos/:id", "host": ["{{baseUrl}}"], "path": ["api", "contatos", ":id"] }
+			}
+		},
+		{
+			"name": "Listar todos contatos",
+			"request": {
+				"method": "GET",
+				"url": { "raw": "{{baseUrl}}/api/contatos", "host": ["{{baseUrl}}"], "path": ["api", "contatos"] }
+			}
+		},
+		{
+			"name": "Obter contato por ID",
+			"request": {
+				"method": "GET",
+				"url": { "raw": "{{baseUrl}}/api/contatos/:id", "host": ["{{baseUrl}}"], "path": ["api", "contatos", ":id"] }
+			}
+		}
+	]
+}
