@@ -1,26 +1,37 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    font-family: system-ui, -apple-system, sans-serif;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Tema DaisyUI customizado: paleta CRUD (verde criar, âmbar editar, vermelho deletar, azul ver) */
+[data-theme="crud"] {
+  /* Marca */
+  --p: 230 83% 52%;   /* primary: azul-navy */
+  --pc: 210 100% 98%;
+  --s: 265 65% 52%;   /* secondary: roxo suave */
+  --sc: 0 0% 100%;
+  --a: 190 80% 45%;   /* accent: teal */
+  --ac: 0 0% 100%;
+
+  /* Base/Neutral */
+  --n: 220 14% 20%;
+  --nc: 220 14% 92%;
+  --b1: 0 0% 100%;     /* base-100 */
+  --b2: 220 14% 97%;   /* base-200 */
+  --b3: 220 14% 92%;   /* base-300 */
+
+  /* Estados (CRUD) */
+  --in: 207 90% 54%;   /* info: azul para "ver" */
+  --su: 142 72% 35%;   /* success: verde para "criar" */
+  --wa: 24 94% 53%;    /* warning: âmbar para "editar" */
+  --er: 0 72% 51%;     /* error: vermelho para "deletar" */
+
+  /* Ajustes sutis de raio/contorno (opcional) */
+  --rounded-box: 1rem;
+  --rounded-btn: 0.8rem;
+  --border: 0.9px;
 }
