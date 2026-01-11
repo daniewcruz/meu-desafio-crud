@@ -100,7 +100,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="footer footer-center p-6 md:p-10 text-base-content">
         <div>
-          <p className="text-xs opacity-50 mt-1 md:mt-2">     2026 - Daniew Cruz</p>
+        
         </div>
       </footer>
     </div>
