@@ -2,10 +2,10 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary/10 via-base-100 to-secondary/10">
+    <div className="min-h-screen bg-gradient-to-br from-primary/10 via-base-100 to-secondary/10 flex flex-col">
       {/* Hero Section */}
-      <div className="hero min-h-screen">
-        <div className="hero-content text-center">
+      <div className="hero flex-grow">
+        <div className="hero-content text-center py-12 md:py-20">
           <div className="max-w-4xl">
             {/* Logo/Icon */}
             <div className="mb-8 flex justify-center">
@@ -98,11 +98,11 @@ export default function Home() {
       </div>
 
       {/* Footer */}
-      <footer className="footer footer-center p-10 bg-base-200 text-base-content">
+      <footer className="footer footer-center p-6 md:p-10 text-base-content">
         <div>
-          <p className="font-semibold text-lg">Sistema de Gerenciamento de Contatos</p>
-          <p className="text-sm opacity-70">Desenvolvido com Next.js, TypeScript e DaisyUI</p>
-          <p className="text-xs opacity-50 mt-2">© 2026 - Todos os direitos reservados</p>
+          <p className="font-semibold text-base md:text-lg">Desafio CRUD</p>
+          <p className="text-xs md:text-sm opacity-70">Desenvolvido com Next.js, React, TypeScript, Tailwind CSS, DaisyUI e PostgreSQL</p>
+          <p className="text-xs opacity-50 mt-1 md:mt-2">2026 - Daniew Cruz</p>
         </div>
       </footer>
     </div>
