@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconTrash } from './icons';
+import { IconTrash } from '../icons';
 
 type Props = {
   onCancel: () => void;

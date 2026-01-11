@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconPlus, IconSearch } from './icons';
+import { IconPlus, IconSearch } from '../icons';
 
 type Props = {
   value: string;

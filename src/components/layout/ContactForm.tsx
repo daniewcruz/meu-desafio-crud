@@ -1,6 +1,6 @@
 import React from 'react';
-import { ContactFormData } from '../types/contact';
-import { IconPlus } from './icons';
+import { ContactFormData } from '../../types/contact';
+import { IconPlus } from '../icons';
 
 type Props = {
 	formData: ContactFormData;

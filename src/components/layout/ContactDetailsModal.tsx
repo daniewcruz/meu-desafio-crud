@@ -1,6 +1,6 @@
 import React from 'react';
-import { Contact } from '../types/contact';
-import { IconCalendar, IconEye, IconMail, IconNote, IconPhone } from './icons';
+import { Contact } from '../../types/contact';
+import { IconCalendar, IconEye, IconMail, IconNote, IconPhone } from '../icons';
 
 type Props = {
   contact: Contact;
