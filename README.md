@@ -30,7 +30,7 @@ O `npm install` instala automaticamente: Next.js, React, TypeScript, Tailwind, D
 
 **Crie o banco:**
 ```sql
-CREATE DATABASE contatos;
+CREATE DATABASE db_contatos;
 ```
 
 **Execute os scripts SQL na ordem:**
